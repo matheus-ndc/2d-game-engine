@@ -5,7 +5,7 @@ int main()
 	util::Platform platform;
 
 #if defined(_DEBUG)
-	std::cout << "Hello World!" << std::endl;
+	std::cout << "DEBUG ON!" << std::endl;
 #endif
 
 	sf::RenderWindow window;
@@ -19,7 +19,7 @@ int main()
 	shape.setFillColor(sf::Color::White);
 
 	sf::Texture shapeTexture;
-	shapeTexture.loadFromFile("content/sfml.png");
+	shapeTexture.loadFromFile("content/icon.png");
 	shape.setTexture(&shapeTexture);
 
 	sf::Event event;
